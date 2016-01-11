@@ -1,0 +1,26 @@
+{
+	"apple_id": "obama@whitehouse.com",
+	"apple_password": "obamaCare4life",
+	"latitude": 38.8977,
+	"longitude": 77.0366,
+	"deviceMap": {
+		"my wife": {
+			"deviceName": "Michelles iPhone 10"
+		},
+		"my daughter": {
+			"deviceName": "Sasha iPhone 3g"
+		},
+		"my phone": {
+			"deviceName": "Baracks iPhone 12"
+		},
+		"sasha": {
+			"deviceName": "Sasha iPhone 3g"
+		},
+		"my first lady": {
+			"deviceName": "Michelles iPhone 10"
+		},
+		"air force one": {
+			"deviceName": "Baracks iPad"
+		}
+	}
+}
