@@ -65,7 +65,7 @@ app.intent('FindPhoneIntent', {
 
 				if (miles == 0) {
 					if (device.lostModeCapable) {
-						msg = util.format("%s is less than a mile away, say alexa fire alarm to make the device beep", possesiveDevice);
+						msg = util.format("%s is less than a mile away, say alexa send alarm to make the device beep", possesiveDevice);
 						device.possesiveDevice = possesiveDevice;
 						response.session('device', device);
 						return response.say(msg).shouldEndSession(false).send();
@@ -104,13 +104,13 @@ app.intent('FindPhoneIntent', {
 
 app.intent('alarm', {
 	"slots": {},
-	"utterances": ["fire alarm"]
+	"utterances": ["send alarm"]
 }, function(request, response) {
-	var device = response.session('deviceId');
+	var device = response.session('device');
 	var msg;
 	
-	if (device) {
-		msg = "Something went wrong. I could not fire the alarm";
+	if (!device) {
+		msg = "Something went wrong. I could not send the alarm";
 		return response.say(msg).shouldEndSession(true).send();
 	} else {
 		icloud.alertDevice(device.id, function(err) {
