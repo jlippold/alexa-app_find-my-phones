@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "alexa-app": "^2.2.0",
-    "find-my-iphone": "git+https://github.com/jlippold/find-my-iphone.git"
+    "find-my-iphone": "git+https://github.com/jlippold/find-my-iphone.git",
+    "moment": "^2.11.1"
   }
 }

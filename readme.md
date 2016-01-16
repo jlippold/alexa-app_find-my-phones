@@ -1,25 +1,24 @@
 # Description
 
-This app allows you to ask alexa to locate devices in your apple icloud account.
+This app allows you to ask Alexa to locate devices in your apple icloud account.
 
 For example,
 
 `You`: Alexa, ask iCloud to find my phone
 
-`Echo`: Your phone is less than a mile away, say alexa fire alarm to make the device beep
+`Alexa`: As of a few seconds ago, your phone is less than 10 feet away
 
-`You`: Alexa, fire alarm
-
-`Echo`: Your phone will now beep.
-
-
-
-or if you have family sharing..
+------ 
 
 `You`: Alexa, ask iCloud to find my wife
 
-`Echo`: Your wife is 3 miles away, near 1600 Pennsylvania Ave in Washington, DC
+`Alexa`: As of a few seconds ago, your wife is 3 miles away, nearby 1600 Pennsylvania Ave in Washington, DC. Approximate driving time: 2 hours and 30 minutes
 
+------
+
+`You`: Alexa, ask iCloud to alert my phone
+
+`Alexa`: Your phone will now beep.
 
 
 # Install
