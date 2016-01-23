@@ -1,6 +1,6 @@
 # Description
 
-This app allows you to ask Alexa to locate devices in your apple icloud account.
+This app allows you to ask Alexa to locate devices in your apple iCloud account.
 
 For example,
 
@@ -25,12 +25,19 @@ For example,
 
 Get the [alexa-app-server](https://github.com/matt-kruse/alexa-app-server) running on your server. Follow the instructions in the alexa-app-server readme.
 
-Download this repo, and copy it to `apps/findmyphone` and run npm install. 
+Download this repo, and copy it to `apps/findmyphone` and run `npm install` 
 
-Rename or copy the `config-sample.json` to `config.json` and edit the contents accordingly with your icloud user/pass and the latitude/longitude of your home, so that the app can measure distance. Also add your devices to the deviceMap object. Each key is the name you want to call the device.
+* Rename or copy the `config-sample.json` to `config.json`
+* Edit the contents accordingly with your iCloud user/pass
+* Edit the latitude/longitude of your home, so that the app can measure distance
+* Add your devices to the deviceMap object; each key is the name you want to call the device
 
 ### Connect with amazon
 
-Create a developers account on amazon. Create a new skill. Name it whatever, Invocation name can be `iCloud`. Intents and utternaces can be determined by going to localhost:8080/findmyphone. Configure ssl, and test the app via the amazon website. At this point you can try it on your echo.
-
-
+* Create a developers account on Amazon
+* Create a new skill
+  * Name it whatever
+  * Invocation name can be `iCloud`
+  * Intents and utterances can be determined by going to http://localhost:8080/alexa/findmyphone
+  * Configure SSL, and test the app via the Amazon website
+* At this point you can try it on your Echo
